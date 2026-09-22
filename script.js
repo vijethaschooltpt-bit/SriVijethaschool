@@ -1,3 +1,8 @@
+// Keep the homepage URL clean if someone visits /#home.
+if (window.location.hash === '#home') {
+  history.replaceState(null, '', window.location.pathname + window.location.search);
+}
+
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 
