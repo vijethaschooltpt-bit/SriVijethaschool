@@ -42,3 +42,17 @@ body{background:#fff}
 .enquiry-form{position:sticky;top:105px}.enquiry-form input:focus,.enquiry-form select:focus,.enquiry-form textarea:focus{outline:3px solid rgba(25,125,194,.12)}
 @media(max-width:900px){.hero-grid{gap:35px;min-height:auto}.hero-copy{max-width:none}.hero-art{min-height:460px}.enquiry-form{position:static}.nav{gap:12px}}
 @media(max-width:680px){.topbar-inner{justify-content:center}.topbar-inner>span:first-child{font-size:.72rem}.answer-summary .container{display:block}.answer-summary strong{display:block;margin-top:4px}.hero{padding-top:34px}.hero-grid{gap:28px}.hero-copy{text-align:left}h1{font-size:clamp(2.65rem,13vw,4rem);line-height:1.02}.hero-lead{font-size:1.02rem!important}.hero-actions{display:grid;grid-template-columns:1fr}.btn{width:100%}.hero-points{display:grid;grid-template-columns:1fr}.hero-points span{justify-content:center}.hero-note{margin-top:18px}.hero-art{min-height:370px;border-radius:28px}.hero-art-label{font-size:.58rem}.stats{gap:8px}.stats div{padding:6px}.stats strong{font-size:1.25rem}.stats span{font-size:.68rem}.contact-heading{text-align:left}.contact-section{padding-top:72px}}
+
+
+/* Indian student hero photo */
+.photo-hero{background:#dff3fa;position:relative;isolation:isolate;overflow:hidden}
+.hero-student-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%;display:block}
+.photo-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,66,127,.04) 0%,rgba(12,66,127,.02) 52%,rgba(8,47,93,.42) 100%);z-index:1}
+.photo-hero .hero-art-label{z-index:3}
+.photo-caption{position:absolute;z-index:3;left:20px;right:20px;bottom:22px;padding:14px 16px;border-radius:16px;background:rgba(255,255,255,.92);box-shadow:0 12px 28px rgba(8,47,93,.18)}
+.photo-caption strong,.photo-caption small{display:block}
+.photo-caption strong{color:var(--blue);font-size:.98rem}
+.photo-caption small{color:var(--muted);font-size:.72rem;margin-top:3px}
+.hero-photo-credit{position:absolute;z-index:3;right:12px;bottom:5px;color:rgba(255,255,255,.9);font-size:.55rem;text-shadow:0 1px 3px rgba(0,0,0,.45)}
+@media(max-width:900px){.hero-student-photo{object-position:center 22%}}
+@media(max-width:680px){.hero-student-photo{object-position:center 24%}.photo-caption{left:14px;right:14px;bottom:18px;padding:11px 13px}.hero-photo-credit{font-size:.48rem;right:9px;bottom:4px}}
